@@ -11,11 +11,11 @@ Example command for creating a database user with the minimum required permissio
 db.getSiblingDB("admin").createUser({
     user: "ADMIN_USER",
     pwd: "ADMIN_PASSWORD",
-    roles: [ "backup", "readAnyDatabase", "clusterMonitor" ]
+    roles: [ "readAnyDatabase", "clusterMonitor" ]
 })
 ```
 
 
 ## Instructions
-* Execute the command: `mongosh <<CONNECTION_STRING>> getMongoSizingData.js --norc --quiet > output.json`
+* Execute the command: `mongosh <<CONNECTION_STRING>> -f getAllMongoSizingData.js --norc --quiet > allDatabasesCollectionsOutput.csv`
 * Send the output file to the MongoDB Solutions Architect for analysis.
