@@ -17,5 +17,8 @@ db.getSiblingDB("admin").createUser({
 
 
 ## Instructions
-* Execute the command: `mongosh <<CONNECTION_STRING>> -f getAllMongoSizingData.js --norc --quiet > allDatabasesCollectionsOutput.csv`
+* Execute the command:
+```javascript
+    mongosh <<CONNECTION_STRING>> -f getAllMongoSizingData.js --norc --quiet > allDatabasesCollectionsOutput.csv
+```
 * Send the output file to the MongoDB Solutions Architect for analysis.
